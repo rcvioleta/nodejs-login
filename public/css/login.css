@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+	background-color: #ccc;
+}
+
+.auth-container {
+	background-color: #dddd;
+	padding: 1rem;
+}
+
+.auth-card {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 20%;
+	padding: 3rem;
+	border-radius: 5px;
+	background-color: #f1f1f1;
+	font-family: "Roboto", sans-serif;
+}
+
+.auth-card a {
+	text-decoration: none;
+	color: #1a1a1a;
+	font-size: 0.8em;
+}
+
+.app-brand h3 {
+	margin: 0rem auto;
+}
+
+.app-brand {
+	text-align: center;
+	font-family: "Satisfy", cursive;
+	font-size: 2em;
+	margin-bottom: 1rem;
+}
+
+.input-group input {
+	padding: 1rem;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.border-radius-tl-tr {
+	border: 1px solid #ccc;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.border-radius-none {
+	border: none;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.border-radius-bl-br {
+	border-top: none;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.input-group button {
+	padding: 0.8rem 1rem;
+	width: 100%;
+	margin: 1rem 0 0.5rem 0;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	color: #fff;
+	background-color: #28daad;
+	box-sizing: border-box;
+}
+
+.divider {
+	text-align: center;
+	margin-top: 2rem;
+	line-height: 0.3;
+}
+
+.divider span {
+	display: inline-block;
+	position: relative;
+}
+
+.divider span::before,
+.divider span::after {
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 100px;
+	border-top: 1px solid #919191;
+}
+
+.divider span::before {
+	right: 100%;
+	margin-right: 15px;
+}
+
+.divider span::after {
+	left: 100%;
+	margin-left: 15px;
+}
+
+.alternative-auth {
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.alternative-auth h4 {
+	margin-bottom: 2rem;
+}
+
+.alternative-auth > a {
+	padding: 0.8rem 1.2rem;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	color: #fff;
+	background-color: #3366ff;
+}
+
+/* bootstrap class error */
+
+.invalid-feedback {
+	font-size: 0.8em;
+	color: #ee5253;
+}
+
+/* media queries */
+
+/* 900 - 1200px tablet landscape */
+@media (max-width: 75em) {
+	.auth-card {
+		width: 30%;
+	}
+
+	.divider span::before,
+	.divider span::after {
+		width: 170px;
+	}
+}
+
+/* 600 - 900px tablet portrait */
+@media (max-width: 56.25em) {
+	.auth-card {
+		width: 40%;
+	}
+
+	.divider span::before,
+	.divider span::after {
+		width: 110px;
+	}
+}
+
+/* 0 - 600px phones  */
+@media (max-width: 37.5em) {
+	.auth-card {
+		top: 50%;
+		width: 70%;
+		padding: 2rem;
+	}
+
+	.divider span::before,
+	.divider span::after {
+		width: 85px;
+	}
+}

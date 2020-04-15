@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <!-- Login CSS -->
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>  
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="auth-card">
+                    <div class="app-brand">
+                        <h3>Login to continue</h3>
+                    </div>
+
+                    <form action="" method="POST"> 
+                        <div class="input-group">
+                            <input type="email" class="border-radius-tl-tr" name="email" required
+                                autocomplete="email" placeholder="Email" autofocus />
+                        </div>
+                        <div class="input-group">
+                            <input type="password" class="border-radius-bl-br" name="password" required
+                                autocomplete="current-password" placeholder="Password" />
+                        </div>
+
+                        <div class="input-group">
+                            <button type="submit">Login</button>
+                        </div>
+                    </form> 
+
+                    <div class="divider">
+                        <span>Or</span>
+                    </div>
+
+                    <div class="alternative-auth">  
+                        <h4> Signin with: </h4>
+                       <a href="/auth/facebook">Facebook</a>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
